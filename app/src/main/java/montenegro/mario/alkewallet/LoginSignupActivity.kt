@@ -5,21 +5,24 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import androidx.core.content.ContextCompat
+import montenegro.mario.alkewallet.databinding.ActivityHomePageBinding
+import montenegro.mario.alkewallet.databinding.ActivityLoginSignupBinding
 
 class LoginSignupActivity : AppCompatActivity() {
+    lateinit var binding: ActivityLoginSignupBinding
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login_signup)
-        window.statusBarColor = ContextCompat.getColor(this, R.color.alke_blue)
-        val creaCuentaBtn = findViewById<Button>(R.id.crea_cuenta)
-        val tieneCuentaBtn = findViewById<Button>(R.id.tiene_cuenta)
 
-        creaCuentaBtn.setOnClickListener { // Crear un Intent para iniciar la segunda actividad
+        super.onCreate(savedInstanceState)
+        window.statusBarColor = ContextCompat.getColor(this, R.color.alke_blue)
+        binding = ActivityLoginSignupBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.creaCuenta.setOnClickListener {
             val intent: Intent =
                 Intent(this, SignupPage::class.java)
             startActivity(intent)
         }
-        tieneCuentaBtn.setOnClickListener { // Crear un Intent para iniciar la segunda actividad
+        binding.tieneCuenta.setOnClickListener {
             val intent: Intent =
                 Intent(this, LoginPage::class.java)
             startActivity(intent)

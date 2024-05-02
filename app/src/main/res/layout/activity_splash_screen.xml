@@ -8,7 +8,7 @@
 
     <include
         android:id="@+id/alke_logo"
-        layout="@layout/logo_alke"
+        layout="@layout/include_logo_alke"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

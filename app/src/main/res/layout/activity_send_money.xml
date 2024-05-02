@@ -20,7 +20,8 @@
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="@id/guidelinederecha"
-        app:layout_constraintStart_toStartOf="@id/guidelineizquierda">
+        app:layout_constraintStart_toStartOf="@id/guidelineizquierda"
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <TextView
@@ -32,7 +33,7 @@
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 
-        <include layout="@layout/imagen_redonda" />
+
     </LinearLayout>
 
     <androidx.constraintlayout.widget.Guideline

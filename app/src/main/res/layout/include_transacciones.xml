@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/transacciones_container"
+    android:visibility="visible">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineizquierda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="21dp" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinederecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="21dp" />
+
+    <LinearLayout
+        android:id="@+id/transaccion1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guidelinederecha"
+        app:layout_constraintStart_toStartOf="@id/guidelineizquierda"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Miniatura de la persona -->
+            <ImageView
+                android:id="@+id/avatarImageView"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/yara" />
+
+            <!-- Icono en la esquina inferior derecha -->
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="75dp"
+                app:strokeWidth="0dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/send_icon_amarillo"
+                    app:shapeAppearanceOverlay="@style/imagenRedonda" />
+            </com.google.android.material.card.MaterialCardView>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Nombre de la persona -->
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yara Khalil"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Fecha -->
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oct 14, 10:24 AM"
+                android:textColor="@color/gris_claro"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Monto de la transacción -->
+        <TextView
+            android:id="@+id/amountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-$15.00"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/transaccion2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/guidelinederecha"
+        app:layout_constraintStart_toStartOf="@id/guidelineizquierda"
+        app:layout_constraintTop_toBottomOf="@id/transaccion1">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Miniatura de la persona -->
+            <ImageView
+                android:id="@+id/avatarImageView2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/sara" />
+
+            <!-- Icono en la esquina inferior derecha -->
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="75dp"
+                app:strokeWidth="0dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/request_icon_azul"
+                    app:shapeAppearanceOverlay="@style/imagenRedonda" />
+            </com.google.android.material.card.MaterialCardView>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Nombre de la persona -->
+            <TextView
+                android:id="@+id/nameTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sara Ibrahim"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Fecha -->
+            <TextView
+                android:id="@+id/dateTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oct 12, 02:13 PM"
+                android:textColor="@color/gris_claro"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Monto de la transacción -->
+        <TextView
+            android:id="@+id/amountTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+$20.50"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/transaccion3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/guidelinederecha"
+        app:layout_constraintStart_toStartOf="@id/guidelineizquierda"
+        app:layout_constraintTop_toBottomOf="@id/transaccion2">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Miniatura de la persona -->
+            <ImageView
+                android:id="@+id/avatarImageView3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ahmad" />
+
+            <!-- Icono en la esquina inferior derecha -->
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="75dp"
+                app:strokeWidth="0dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/request_icon_azul"
+                    app:shapeAppearanceOverlay="@style/imagenRedonda" />
+            </com.google.android.material.card.MaterialCardView>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Nombre de la persona -->
+            <TextView
+                android:id="@+id/nameTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ahmad Ibrahim"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Fecha -->
+            <TextView
+                android:id="@+id/dateTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oct 11, 01:19 AM"
+                android:textColor="@color/gris_claro"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Monto de la transacción -->
+        <TextView
+            android:id="@+id/amountTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+$12.40"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/transaccion4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/guidelinederecha"
+        app:layout_constraintStart_toStartOf="@id/guidelineizquierda"
+        app:layout_constraintTop_toBottomOf="@id/transaccion3">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Miniatura de la persona -->
+            <ImageView
+                android:id="@+id/avatarImageView4"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/reem" />
+
+            <!-- Icono en la esquina inferior derecha -->
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="75dp"
+                app:strokeWidth="0dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/send_icon_amarillo"
+                    app:shapeAppearanceOverlay="@style/imagenRedonda" />
+            </com.google.android.material.card.MaterialCardView>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Nombre de la persona -->
+            <TextView
+                android:id="@+id/nameTextView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reem Khaled"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Fecha -->
+            <TextView
+                android:id="@+id/dateTextView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oct 07, 09:10 PM"
+                android:textColor="@color/gris_claro"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Monto de la transacción -->
+        <TextView
+            android:id="@+id/amountTextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-$21.30"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/transaccion5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/guidelinederecha"
+        app:layout_constraintStart_toStartOf="@id/guidelineizquierda"
+        app:layout_constraintTop_toBottomOf="@id/transaccion4">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Miniatura de la persona -->
+            <ImageView
+                android:id="@+id/avatarImageView5"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/hiba" />
+
+            <!-- Icono en la esquina inferior derecha -->
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="75dp"
+                app:strokeWidth="0dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/request_icon_azul"
+                    app:shapeAppearanceOverlay="@style/imagenRedonda" />
+            </com.google.android.material.card.MaterialCardView>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Nombre de la persona -->
+            <TextView
+                android:id="@+id/nameTextView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hiba Saleh"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Fecha -->
+            <TextView
+                android:id="@+id/dateTextView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oct 04, 05:45 AM"
+                android:textColor="@color/gris_claro"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Monto de la transacción -->
+        <TextView
+            android:id="@+id/amountTextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+$09.00"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

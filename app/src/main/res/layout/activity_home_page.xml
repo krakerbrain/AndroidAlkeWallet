@@ -14,28 +14,6 @@
         app:layout_constraintGuide_begin="21dp" />
 
 
-    <LinearLayout
-        android:id="@+id/linear1"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:gravity="center"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/guidelinederecha"
-        app:layout_constraintStart_toStartOf="@id/guidelineizquierda">
-
-
-        <TextView
-            android:id="@+id/textViewInicio"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/jua"
-            android:text="Home Page"
-            android:textColor="@android:color/black"
-            android:textSize="16sp" />
-
-    </LinearLayout>
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelinederecha"
         android:layout_width="wrap_content"
@@ -43,36 +21,36 @@
         android:orientation="vertical"
         app:layout_constraintGuide_end="21dp" />
 
+    <include
+        android:id="@+id/header"
+        layout="@layout/include_header_home_page" />
+
     <Button
         android:id="@+id/enviar_dinero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="240dp"
+        style="@style/boton_verde"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="21dp"
+        android:drawableLeft="@drawable/send_icon"
         android:text="Enviar Dinero"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linear1" />
+        app:layout_constraintStart_toStartOf="@id/guidelineizquierda"
+        app:layout_constraintTop_toBottomOf="@id/header" />
 
     <Button
         android:id="@+id/ingresar_dinero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="Ingresar Dinero"
-        app:layout_constraintEnd_toEndOf="@+id/enviar_dinero"
-        app:layout_constraintHorizontal_bias="0.538"
-        app:layout_constraintStart_toStartOf="@+id/enviar_dinero"
-        app:layout_constraintTop_toBottomOf="@id/enviar_dinero" />
+        style="@style/boton_azul_alke"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="21dp"
+        android:drawableLeft="@drawable/request_icon"
 
-    <Button
-        android:id="@+id/empty_case"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:text="Empty Case"
-        app:layout_constraintEnd_toEndOf="@+id/ingresar_dinero"
-        app:layout_constraintStart_toStartOf="@+id/ingresar_dinero"
-        app:layout_constraintTop_toBottomOf="@id/ingresar_dinero" />
+        android:text="Ingresar Dinero"
+        app:layout_constraintEnd_toEndOf="@id/guidelinederecha"
+        app:layout_constraintTop_toBottomOf="@id/header" />
+
+    <include layout="@layout/include_transacciones"
+        android:id="@+id/transacciones"
+        android:visibility="visible"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

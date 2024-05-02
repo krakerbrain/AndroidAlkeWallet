@@ -26,7 +26,7 @@
 
     <include
         android:id="@+id/alke_logo"
-        layout="@layout/logo_alke"
+        layout="@layout/include_logo_alke"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@id/guideline_new"
@@ -69,39 +69,39 @@
         app:layout_constraintGuide_percent="0.9" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
+        android:id="@+id/guidelineIzquierda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_begin="21dp" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
+        android:id="@+id/guidelineDerecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="20dp" />
+        app:layout_constraintGuide_end="21dp" />
 
     <Button
         android:id="@+id/crea_cuenta"
         style="@style/boton_azul_alke"
-        android:layout_width="370dp"
+        android:layout_width="0dp"
         android:layout_height="60dp"
         android:text="@string/crea_cuenta"
         app:layout_constraintBottom_toBottomOf="@id/guideline4"
-        app:layout_constraintEnd_toEndOf="@id/guideline6"
-        app:layout_constraintStart_toStartOf="@id/guideline5"
+        app:layout_constraintEnd_toEndOf="@id/guidelineDerecha"
+        app:layout_constraintStart_toStartOf="@id/guidelineIzquierda"
         app:layout_constraintTop_toTopOf="@id/guideline3" />
 
     <Button
         android:id="@+id/tiene_cuenta"
         style="@style/boton_transparente"
-        android:layout_width="370dp"
+        android:layout_width="0dp"
         android:layout_height="60dp"
         android:text="@string/ya_tienes_una_cuenta"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/guideline6"
-        app:layout_constraintStart_toStartOf="@id/guideline5"
+        app:layout_constraintEnd_toEndOf="@id/guidelineDerecha"
+        app:layout_constraintStart_toStartOf="@id/guidelineIzquierda"
         app:layout_constraintTop_toTopOf="@id/guideline4" />
 
 
