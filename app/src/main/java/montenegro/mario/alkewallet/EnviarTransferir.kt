@@ -26,6 +26,18 @@ class EnviarTransferir : AppCompatActivity() {
             binding.hintInput.hint = "Agregar notas de transferencia (opcional)"
             binding.ingresarDinero.visibility = View.INVISIBLE
             binding.enviarDinero.visibility = View.VISIBLE
+            binding.montoInput.boxStrokeColor = ContextCompat.getColor(this, R.color.verde)
+            binding.hintMonto.setTextColor(ContextCompat.getColor(this, R.color.verde))
+
+            val drawable = ContextCompat.getDrawable(this, R.drawable.money_icon)
+            drawable?.setTint(ContextCompat.getColor(this, R.color.verde))
+            binding.hintMonto.setCompoundDrawablesWithIntrinsicBounds(drawable, null, null, null)
+
+        }
+
+        binding.irAtras.setOnClickListener {
+            finish()
         }
     }
+
 }
