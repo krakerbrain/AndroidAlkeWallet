@@ -39,6 +39,7 @@
         <item name="cornerRadius">10dp</item>
     </style>
 
+
     <style name="texto_grande">
         <item name="android:textSize">28sp</item>
         <item name="android:textColor">@color/black</item>
