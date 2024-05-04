@@ -39,9 +39,8 @@ conectadas a una base de datos. Todos los datos se encuentran hardcodeados en la
 
 ## Capturas de Pantalla
 
-![Splash Screen](screenshots/splash_screen.png "Splash Screen")![Login/Signup Page](screenshots/login_signup_page.png "Login/Signup Page")
-
-*Pantalla de bienvenida*
+![Splash Screen](screenshots/splash_screen.png "Splash Screen")&nbsp;&nbsp;&nbsp;![Login/Signup Page](screenshots/login_signup_page.png "Login/Signup Page")&nbsp;&nbsp;&nbsp;![Login Page](screenshots/login_page.png "Login Page")&nbsp;&nbsp;&nbsp;![Signup Page](screenshots/signup_page.png "Signup Page")
+![Home Page](screenshots/home_page.png "Home Page")&nbsp;&nbsp;&nbsp;![Home Page Empty Case](screenshots/home_page_empty_case.png "Home Page Empty Case")&nbsp;&nbsp;&nbsp;![Request Money](screenshots/reuest_money.png "Request Money")&nbsp;&nbsp;&nbsp;![Send Money](screenshots/send_money.png "Send Money")&nbsp;&nbsp;&nbsp;![Profile Page](screenshots/profile_page.png "Profile Page")
 
 ## Contribución
 
