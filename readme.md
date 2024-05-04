@@ -39,7 +39,7 @@ conectadas a una base de datos. Todos los datos se encuentran hardcodeados en la
 
 ## Capturas de Pantalla
 
-<img src="screenshots/splash_screen.png" alt="Splash Screen" width="200" height="400" title="Splash Screen" style="margin-right:15px"/> | <img src="screenshots/login_signup_page.png" alt="Login/Signup Page"width="200" height="400" title="Login/Signup Page" style="margin-right:15px"/> | <img src="screenshots/login_page.png" alt="Login Page"width="200" height="40" title="Login Page" style="margin-right:15px"/>
+![Splash Screen](screenshots/splash_screen.png "Splash Screen")![Login/Signup Page](screenshots/login_signup_page.png "Login/Signup Page")
 
 *Pantalla de bienvenida*
 
