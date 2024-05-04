@@ -23,5 +23,12 @@
     <string name="ingresar_pass">Ingresar contraseña</string>
     <string name="reingresar_contrase_a">Reingresar contraseña</string>
     <string name="crear_cuenta">Crear cuenta</string>
+    <string name="inicioStringProfile">Inicio</string>
+    <string name="hola_amanda">Hola, Amanda</string>
+    <string name="balance_total">Balance Total</string>
+    <string name="random_money">$124.57</string>
+    <string name="bell_icon_badge">bell_icon_badge</string>
+    <string name="enviar_dinero">Enviar Dinero</string>
+    <string name="ingresar_dinero">Ingresar Dinero</string>
     <integer name="splash_screen_duration">3000</integer>
 </resources>
