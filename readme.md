@@ -40,15 +40,15 @@ conectadas a una base de datos. Todos los datos se encuentran hardcodeados en la
 ## Capturas de Pantalla
 
 <div>
-<figure>
-   <figcaption>Splash Screen</figcaption>
-  <img src="screenshots/splash_screen.png" alt="Splash Screen" width="300" height="600" />
-</figure>
+  <div style="display: inline-block; text-align: center;">
+    <figcaption>Splash Screen</figcaption>
+    <img src="screenshots/splash_screen.png" alt="Splash Screen" width="150" height="300" />
+  </div>
 
-<figure>
-   <figcaption>Login/Signup Page</figcaption>
-  <img src="screenshots/login_signup_page.png" alt="Login" width="300" height="600" />
-</figure>
+  <div style="display: inline-block; text-align: center;">
+    <figcaption>Login/Signup Page</figcaption>
+    <img src="screenshots/login_signup_page.png" alt="Login/Signup Page" width="150" height="300" />
+  </div>
 </div>
 
 *Pantalla de bienvenida*
