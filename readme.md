@@ -29,6 +29,20 @@ En la versión actual, la aplicación solo muestra las vistas básicas y algunos
 3. Configura un emulador o conecta un dispositivo Android a tu máquina.
 4. Ejecuta la aplicación en el emulador o dispositivo.
 
+## Capturas de Pantalla
+
+<figure>
+  <img src="screenshots/splash_screen.png" alt="Splash Screen" width="300" height="600" />
+  <figcaption>Splash Screen</figcaption>
+</figure>
+
+<figure>
+  <img src="screenshots/login_signup_page.png" alt="Login" width="300" height="600" />
+  <figcaption>Login/Signup Page</figcaption>
+</figure>
+
+*Pantalla de bienvenida*
+
 ## Contribución
 
 ¡Las contribuciones son bienvenidas! Si deseas mejorar esta aplicación, por favor abre un issue primero para discutir qué te gustaría cambiar.
