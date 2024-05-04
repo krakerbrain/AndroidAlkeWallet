@@ -39,13 +39,13 @@ conectadas a una base de datos. Todos los datos se encuentran hardcodeados en la
 
 ## Capturas de Pantalla
 
-<div>
-  <div style="display: inline-block; text-align: center;">
+<div style="display: inline-block">
+  <div >
     <figcaption>Splash Screen</figcaption>
     <img src="screenshots/splash_screen.png" alt="Splash Screen" width="150" height="300" />
   </div>
 
-  <div style="display: inline-block; text-align: center;">
+  <div>
     <figcaption>Login/Signup Page</figcaption>
     <img src="screenshots/login_signup_page.png" alt="Login/Signup Page" width="150" height="300" />
   </div>
