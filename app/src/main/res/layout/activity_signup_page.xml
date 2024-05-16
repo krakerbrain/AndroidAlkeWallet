@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".SignupPage">
+    tools:context=".view.SignupPage">
 
     <ImageView
         android:id="@+id/backgroundImageView"
@@ -47,6 +47,7 @@
         app:layout_constraintTop_toTopOf="@id/guideline1" />
 
     <include
+        android:id="@+id/include_signup_form"
         layout="@layout/include_signup_form"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -32,10 +32,10 @@
             android:name=".HomePage"
             android:exported="false" />
         <activity
-            android:name=".SignupPage"
+            android:name=".view.SignupPage"
             android:exported="false" />
         <activity
-            android:name=".LoginPage"
+            android:name=".view.LoginPage"
             android:exported="false" />
         <activity
             android:name=".LoginSignupActivity"

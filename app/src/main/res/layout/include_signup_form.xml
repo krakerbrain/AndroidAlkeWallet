@@ -44,6 +44,7 @@
                 app:layout_constraintTop_toBottomOf="@id/labelNombre">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editNombreInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/jua"
@@ -69,13 +70,14 @@
                 android:id="@+id/apellidoInput"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-android:background="@color/white"
+                android:background="@color/white"
                 app:hintEnabled="false"
                 app:layout_constraintEnd_toEndOf="@id/guidelinederecha"
                 app:layout_constraintStart_toStartOf="@id/guidelineizquierda"
                 app:layout_constraintTop_toBottomOf="@id/labelApellido">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editApellidoInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/jua"
@@ -111,6 +113,7 @@ android:background="@color/white"
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editEmailInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/jua"
@@ -148,6 +151,7 @@ android:background="@color/white"
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editPassInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/jua"
@@ -184,6 +188,7 @@ android:background="@color/white"
                 app:layout_constraintTop_toBottomOf="@id/label_repass">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editConfirmPassInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/jua"

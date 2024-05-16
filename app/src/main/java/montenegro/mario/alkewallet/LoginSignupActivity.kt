@@ -3,10 +3,10 @@ package montenegro.mario.alkewallet
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import androidx.core.content.ContextCompat
-import montenegro.mario.alkewallet.databinding.ActivityHomePageBinding
 import montenegro.mario.alkewallet.databinding.ActivityLoginSignupBinding
+import montenegro.mario.alkewallet.view.LoginPage
+import montenegro.mario.alkewallet.view.SignupPage
 
 class LoginSignupActivity : AppCompatActivity() {
     lateinit var binding: ActivityLoginSignupBinding
